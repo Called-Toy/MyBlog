@@ -30,12 +30,16 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/唐涛/Desktop/myshop",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "last_opened_file_path": "C:/Users/唐涛/myblog",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\唐涛\myshop\static\myweb" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\唐涛\myshop\templates\myweb\products" />
       <recent name="C:\Users\唐涛\Desktop\myshop\myweb\views" />
     </key>
   </component>

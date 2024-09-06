@@ -1,0 +1,37 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('/static/myweb/1.jpg'); /* 替换为你的背景图片 URL */
+            background-size: cover; /* 使背景图片覆盖整个页面 */
+            background-position: center; /* 背景图片居中 */
+            height: 100vh; /* 视口高度 */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            }
+
+h1 {
+            font-size: 4em;
+            margin: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 增加阴影效果 */
+           }
+
+
+.button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+         }
+
+
+.button:hover {
+            background-color: rgba(255, 255, 255, 1);
+                }

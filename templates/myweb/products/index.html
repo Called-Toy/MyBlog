@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="static/css/myblog_index.css">
+    <script src="static/js/index.js"></script>
+</head>
+<body>
+<!--head-->
+<div>
+    <a href="{% url 'myblog_index' %}" class="logo">TeoBlog</a>
+</div>
+<div class="top-container"></div>
+<div class="right-container" onclick="toggleBlock()"><h1>Alexprize</h1></div>
+<div class="right-container-hidden" id="newBlock">
+    <img  class='img-user' src="static/myweb/user-160x160.jpg">
+    <h2><a href="{% url 'myweb_loginout' %}">退出登录</a></h2>
+</div>
+<!--main-->
+
+</body>
+</html>
+

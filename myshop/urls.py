@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('myweb.urls')),  # 路由到商店应用urls
+    path('', include('myweb.urls')),  # 路由到myweb的urls
 ]

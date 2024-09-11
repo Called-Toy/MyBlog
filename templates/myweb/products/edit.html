@@ -1,13 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'myweb/base.html' %}
 
-</body>
-</html>
+{% block main_body %}
+<!--编辑贴子区域-->
+<div class="main-container">
+    <div class="main-container-title">
+        <h1>编辑贴子</h1>
+    </div>
+    <div class="main-container-content">
+        <form action="{% url 'myblog_update' blog.id %}" method="post">
+            {% csrf_token %}
+            <div class="main-container-content-item">
+                <div class="main-container-content-item-title">
+                    <label for="title">标题</label>
+                    <input type="text" name="title" id="title" value="{{ blog.title }}">
+                </div>
+                <div class="main-container-content-item-content">
+                    <label for="content">内容</label>
+                    <textarea name="content" id="content" cols="30" rows="10">{{ blog.content }}</textarea>
+                </div>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

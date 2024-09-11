@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页面</title>
     <link rel="stylesheet" href="/static/css/login.css">
+
 </head>
 <body>
-
+<div class="login-info">
+    <center>
+    <h3>{{ info }}</h3>
+    </center>
+</div>
 <div class="login-container">
     <h2>登录</h2>
     <form action="{%url 'myweb_dologin' %}" method="post">
@@ -23,5 +28,6 @@
         <input type="submit" value="登录">
     </form>
 </div>
+
 </body>
 </html>

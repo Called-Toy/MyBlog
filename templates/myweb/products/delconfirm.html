@@ -1,0 +1,22 @@
+{% extends 'myweb/base.html' %}
+
+{% block main_body %}
+<!--以下确认删除的帖子-->
+<div class="main-container">
+    <div class="main-container-title">
+        <h1>你正在删除如下帖子，是否确认删除！</h1>
+    </div>
+    <div class="main-container-content">
+        <div class="main-container-content-item">
+            <div class="main-container-content-item-title">
+                <h2>{{ blog.title }}</h2>
+                <a href="{% url 'myblog_del' blog.id %}" >确认删除！</a>
+                <a href="{% url 'myblog_index' %}" >取消</a>
+            </div>
+            <div class="main-container-content-item-content">
+                <p>{{ blog.content }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

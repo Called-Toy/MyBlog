@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的博客</title>
-    <link rel="stylesheet" href="static/css/myblog_index.css">
-    <script src="static/js/index.js"></script>
-</head>
-<body>
-<!--head-->
-<div>
-    <a href="{% url 'myblog_index' %}" class="logo">TeoBlog</a>
-</div>
-<div class="top-container"></div>
-<div class="right-container" onclick="toggleBlock()"><h1>Alexprize</h1></div>
-<div class="right-container-hidden" id="newBlock">
-    <img  class='img-user' src="static/myweb/user-160x160.jpg">
-    <h2><a href="{% url 'myweb_loginout' %}">退出登录</a></h2>
-</div>
-<!--main-->
+{% extends 'myweb/base.html' %}
 
-</body>
-</html>
+{% block main_body %}
+<!--个人贴子展示区域-->
+<div class="main-container">
+    <div class="main-container-title">
+        <h1>我的博客</h1>
+        <a href="{% url 'myblog_add' %}">添加</a>
+    </div>
+    <div class="main-container-content">
+        {% for product in products %}
+        <div class="main-container-content-item">
+            <div class="main-container-content-item-title">
+                <h2>{{ product.title }}</h2>
+                <a href="{% url 'myblog_edit' product.id %}" >编辑</a>
+                <a href="{% url 'myblog_delconfirm'  product.id %}" >删除</a>
+            </div>
+            <div class="main-container-content-item-content">
+                <p>{{ product.content }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}
 

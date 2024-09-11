@@ -1,13 +1,17 @@
         body {
                 margin: 0; /* 移除默认边距 */
                 height: 100vh; /* 设置高度为视口高度 */
+                background-image: url('/static/myweb/R-C.jpg'); /* 替换为你的背景图片 URL */
+                background-size: cover; /* 使背景图片覆盖整个页面 */
+                background-position: center; /* 背景图片居中 */
         }
 
         .logo {
                 position: absolute; /* 设定为绝对定位 */
                 top: 0; /* 距离顶部0像素 */
                 left: 0; /* 距离左侧0像素 */
-                padding: 7px; /* 添加内边距 */
+
+                padding: 9px; /* 添加内边距 */
                 font-size: 28px; /* 字体大小 */
                 color: white; /* 字体颜色 */
                 text-decoration: none; /* 去除下划线 */
@@ -25,32 +29,136 @@
                 width:150px;
                 top: 0; /* 距离顶部0像素 */
                 right: 0; /* 距离左侧0像素 */
-                padding: 7px; /* 添加内边距 */
-                font-size: 7px; /* 字体大小 */
-                color: white; /* 字体颜色 */
+                padding-left: 20px; /* 添加内边距 */
+                font-size: 10px; /* 字体大小 */
+                color: pink; /* 字体颜色 */
                 text-decoration: none; /* 去除下划线 */
                 background-color: rgba(54, 127, 169); /* 背景颜色（可选） */
                 cursor:pointer;
         }
         .right-container-hidden{
-                 position: absolute; /* 设定为绝对定位 */
-                 width:278px;
-                 height: 175px;
-                 padding: 10px;
+                position: absolute; /* 设定为绝对定位 */
+                width:278px;
+                height: 175px;
+                padding: 7px;
                 top: 20; /* 距离顶部0像素 */
                 right: 0; /* 距离左侧0像素 */
                 padding: 7px; /* 添加内边距 */
                 font-size: 7px; /* 字体大小 */
-                color: white; /* 字体颜色 */
+                color: black; /* 字体颜色 */
                 text-decoration: none; /* 去除下划线 */
                 background-color: rgba(54, 127, 169); /* 背景颜色（可选） */
                 cursor:pointer;
                 display:none;
                 }
-
-        .img-user{
-                width:45px;
-                height:45px;
+        .right-container-hidden a{
+                color:white;
+                text-decoration:none;
+                fot-size:10px;
         }
+            .img-user{
+                    width:45px;
+                    height:45px;
+            }
+
+            /* 主容器 */
+            .main-container {
+                width: 60%;
+                background-color: #fff;
+                margin-top: 20px;
+                padding: 20px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0.8;
+            }
+
+            /* 标题部分 */
+            .main-container-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .main-container-title h1 {
+                margin: 0;
+                font-size: 2em;
+                color: #333;
+            }
+
+            .main-container-title a {
+                text-decoration: none;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 1em;
+            }
+
+            .main-container-title a:hover {
+                background-color: #45a049;
+            }
+
+            /* 内容部分 */
+            .main-container-content {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(300px, 1fr));
+                gap: 20px;
+            }
+
+            /* 单个内容项 */
+            .main-container-content-item {
+                background-color: #f9f9f9;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            /* 内容项标题部分 */
+            .main-container-content-item-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .main-container-content-item-title h2 {
+                margin: 0;
+                font-size: 1.5em;
+                color: #333;
+            }
+
+            .main-container-content-item-title a {
+                text-decoration: none;
+                color: white;
+                background-color: #007BFF;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 0.9em;
+            }
+
+            .main-container-content-item-title a:hover {
+                background-color: #0056b3;
+            }
+
+            /* 删除按钮 */
+            .main-container-content-item-title a:nth-child(3) {
+                background-color: #FF4136;
+            }
+
+            .main-container-content-item-title a:nth-child(3):hover {
+                background-color: #e02a1d;
+            }
+
+            /* 内容部分 */
+            .main-container-content-item-content {
+                margin-top: 30px;
+            }
+
+            .main-container-content-item-content p {
+                color: #666;
+                line-height: 1.6;
+            }
+
 
 

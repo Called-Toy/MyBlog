@@ -2,7 +2,7 @@ body {
             margin: 0;
             font-family: Arial, sans-serif;
             color: white;
-            background-image: url('/static/myweb/1.jpg'); /* 替换为你的背景图片 URL */
+            background-image: url('/static/myweb/splash.jpeg'); /* 替换为你的背景图片 URL */
             background-size: cover; /* 使背景图片覆盖整个页面 */
             background-position: center; /* 背景图片居中 */
             height: 100vh; /* 视口高度 */
@@ -29,6 +29,7 @@ h1 {
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            text-decoration: none;
          }
 
 

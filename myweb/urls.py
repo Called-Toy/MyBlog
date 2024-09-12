@@ -10,6 +10,10 @@ urlpatterns = [
     path('myblog/login', index.login, name='myweb_login'),
     path('myblog/dologin',index.dologin,name='myweb_dologin'),
     path('myblog/loginout',index.loginout,name='myweb_loginout'),
+    # 注册博客
+    path('myblog/register',index.register,name='myweb_register'),
+    #  执行注册
+    path('myblog/do_register',index.do_register,name='myweb_do_register'),
 
     #  添加博客
     path('myblog/add',index.myblog_add,name='myblog_add'),

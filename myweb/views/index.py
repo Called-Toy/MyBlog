@@ -89,6 +89,32 @@ def myblog_delconfirm(request, id):
         return render(request, 'myweb/products/info.html', context)
 
 
+
+# 注册博客
+def register(request):
+    return render(request, "myweb/register.html")
+
+# 执行注册
+def do_register(request):
+    try:
+        user = User()
+        user.username = request.POST['username']
+        user.password = request.POST['password']
+        user.avatar = request.POST['avatar']
+        user.save()
+        # 保存头像到本地
+        avatar = request.FILES.get('avatar')
+        if avatar:
+            with open('/static/myweb/' + user.avatar, 'wb') as f:
+                for chunk in avatar.chunks():
+                    f.write(chunk)
+        context = {'info': '注册成功！'}
+        return render(request, 'myweb/register_success.html', context)
+    except Exception as err:
+        print(err)
+        context = {'info': '注册失败！'}
+        return render(request, 'myweb/register_fail.html', context)
+
 #  执行登录表单
 def login(request):
     return render(request, "myweb/login.html")

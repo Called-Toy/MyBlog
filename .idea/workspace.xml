@@ -5,33 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9446a39-1d11-4bd4-98e8-e695fe3410e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myweb/login_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/R-C.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/avatar04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/avatar3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/base-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myweb/splash.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myweb/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myweb/products/delconfirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myweb/products/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/myweb/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/myweb/register_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/myweb/register_success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/shopmiddleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/shopmiddleware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/views/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/initial_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/initial_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/myblog_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/myblog_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/user-160x160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/dologin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/login_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/myweb/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/products/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/products/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/products/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/products/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/products/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myweb/login_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/login_info.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -20,6 +20,16 @@ body {
             padding: 10px;
             margin-bottom: 10px;
         }
+        .register-info{
+            top: 20px;
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
         .login-container {
             background-color: white;
             padding: 80px;
@@ -55,4 +65,13 @@ body {
         }
         input[type="submit"]:hover {
             background-color: #4cae4c;
+        }
+        .register{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:32px;
+            color: #007bff;
+            text-align: center;
+            text-decoration: none;
         }

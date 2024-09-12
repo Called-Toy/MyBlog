@@ -8,9 +8,14 @@
 
 </head>
 <body>
+<div class="login-info">
+    <center>
+    <h3>{{ info }}</h3>
+    </center>
+</div>
 <div class="login-container">
     <h2>注册</h2>
-    <form id="registrationForm" action="{% url 'myweb_do_register' %}" method="post">
+    <form id="registrationForm" action="{% url 'myweb_do_register' %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="form-group">
             <label>用户名</label>

@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9446a39-1d11-4bd4-98e8-e695fe3410e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myweb/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myweb/register_fail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/myweb/register_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/myweb/back-ground.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb/shopmiddleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/shopmiddleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/views/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/login_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/login_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/R-C.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/myweb/R-C.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/avatar04.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/avatar04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/base-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myweb/splash.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/myweb/splash.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myweb/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myweb/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myweb/register_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/register_fail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>

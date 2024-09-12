@@ -3,6 +3,7 @@ from myweb.models import User, Blog
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
 import traceback
+from django.core.files.storage import FileSystemStorage
 # Create your views here.
 
 def index(request):
@@ -100,14 +101,13 @@ def do_register(request):
         user = User()
         user.username = request.POST['username']
         user.password = request.POST['password']
-        user.avatar = request.POST['avatar']
-        user.save()
         # 保存头像到本地
-        avatar = request.FILES.get('avatar')
+        avatar = request.FILES['avatar']
         if avatar:
-            with open('/static/myweb/' + user.avatar, 'wb') as f:
-                for chunk in avatar.chunks():
-                    f.write(chunk)
+            fs = FileSystemStorage()
+            filename = fs.save(avatar.name, avatar)
+            user.avatar = avatar.name
+        user.save()
         context = {'info': '注册成功！'}
         return render(request, 'myweb/register_success.html', context)
     except Exception as err:

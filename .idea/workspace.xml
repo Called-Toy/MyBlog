@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9446a39-1d11-4bd4-98e8-e695fe3410e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/myweb/back-ground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/user2-160x160.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/views/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/R-C.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/myweb/R-C.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/avatar04.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/avatar04.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/avatar2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/avatar3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/base-background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myweb/splash.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/myweb/splash.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/myweb/register_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/register_fail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +42,8 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.bcps.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bcrypt.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/唐涛/myblog/static/myweb&quot;,

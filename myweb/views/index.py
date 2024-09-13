@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
 import traceback
 from django.core.files.storage import FileSystemStorage
+import bcrypt
 # Create your views here.
 
 def index(request):
@@ -100,12 +101,18 @@ def do_register(request):
     try:
         user = User()
         user.username = request.POST['username']
-        user.password = request.POST['password']
+        password = request.POST['password']
+        # 密码加密
+        password = password.encode('utf-8') # 转为字节串
+        salt = bcrypt.gensalt() # 生成盐
+        hashed_password = bcrypt.hashpw(password,salt) # 加密
+        user.password = hashed_password.decode('utf-8') # 转为字符串
+        user.save() # 保存用户信息
         # 保存头像到本地
         avatar = request.FILES['avatar']
         if avatar:
             fs = FileSystemStorage()
-            filename = fs.save(avatar.name, avatar)
+            fs.save(avatar.name, avatar)
             user.avatar = avatar.name
         user.save()
         context = {'info': '注册成功！'}
@@ -125,8 +132,11 @@ def dologin(request):
     try:
         # 获取表单用户数据
         user = User.objects.get(username=request.POST['username'])
+
+        password = request.POST['password']
+        password_encode = password.encode('utf-8')
         # 判断登录密码是否正确
-        if user.password == request.POST['password']:
+        if  bcrypt.checkpw(password_encode, user.password.encode('utf-8')):
             print('登录成功')
             request.session['adminuser'] = user.toDict()
             # 重定向到博客首页

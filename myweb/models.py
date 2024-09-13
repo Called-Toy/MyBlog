@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class User(models.Model):
     username = models.CharField(max_length=20)  # 员工账号
-    password = models.CharField(max_length=20)  # 密码
+    password = models.CharField(max_length=255)  # 密码
     avatar = models.TextField(max_length=20)  # 头像
 
     def toDict(self):

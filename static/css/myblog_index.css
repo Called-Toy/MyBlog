@@ -159,6 +159,30 @@
                 color: #666;
                 line-height: 1.6;
             }
+            .main-container-search{
+                position: absolute; /* 设定为绝对定位 */
+                top:90px; /* 距离顶部0像素 */
+                left: 50%; /* 距离左侧50%像素 */
+                transform: translateX(-50%); /* 水平居中 */
+                justify-content:space-between;
+                align-items:center;
+                text-display:none;
+                font-size: 20px;
+            }
+            .main-container-page{
+                position:absolute; /* 设定为绝对定位 */
+                top:120px; /* 距离顶部180像素 */
+                left: 49%; /* 距离左侧50%像素 */
+                transform: translateX(-50%); /* 水平居中 */
+                justify-content:center;
+                align-items:center;
+                text-display:none;
+                font-size: 20px;
+            }
+            .main-container-page a.active{
+                color: red;
+            }
+
 
 
 

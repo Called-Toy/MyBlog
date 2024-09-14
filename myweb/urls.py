@@ -27,5 +27,7 @@ urlpatterns = [
     path('myblog/del/<int:id>',index.myblog_del,name='myblog_del'),
     # 确认删除博客
     path('myblog/delconfirm/<int:id>',index.myblog_delconfirm,name='myblog_delconfirm'),
+    # 搜索博客
+    path('myblog/search',index.myblog_search,name='myblog_search'),
 
 ]

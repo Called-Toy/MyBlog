@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9446a39-1d11-4bd4-98e8-e695fe3410e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/user2-160x160.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myweb/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myweb/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/views/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/myblog_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/myblog_index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/myweb/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/myweb/products/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -3,6 +3,31 @@
 {% block main_body %}
 <!--个人贴子展示区域-->
 <div class="main-container">
+    <!--搜索区域-->
+    <div class="main-container-search">
+        <form action="{% url 'myblog_search' %}" method="get">
+            <input type="text" name="keyword" placeholder="搜索">
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+    <!--分页区域-->
+    <div class="main-container-page">
+        <a href="{% url 'myblog_index' %}?page=1">首页</a>
+        {% if page.has_previous %}
+        <a href="{% url 'myblog_index' %}?page={{ page.previous_page_number }}">上一页</a>
+        {% endif %}
+        {% for i in page_range %}
+        {% if page == i %}
+        <a href="{% url 'myblog_index' %}?page={{ i }}" class="active">{{ i }}</a>
+        {% else %}
+        <a href="{% url 'myblog_index' %}?page={{ i }}">{{ i }}</a>
+        {% endif %}
+        {% endfor %}
+        {% if page.has_next %}
+        <a href="{% url 'myblog_index' %}?page={{ page.next_page_number }}">下一页</a>
+        {% endif %}
+        <a href="{% url 'myblog_index' %}?page={{ page_number }}">尾页</a>
+    </div>
     <div class="main-container-title">
         <h1>我的博客</h1>
         <a href="{% url 'myblog_add' %}">添加</a>
@@ -21,7 +46,6 @@
         </div>
         {% endfor %}
     </div>
-
 </div>
 {% endblock %}
 

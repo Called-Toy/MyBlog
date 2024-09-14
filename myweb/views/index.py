@@ -5,6 +5,7 @@ from django.shortcuts import render, get_object_or_404
 import traceback
 from django.core.files.storage import FileSystemStorage
 import bcrypt
+from django.core.paginator import Paginator
 # Create your views here.
 
 def index(request):
@@ -15,7 +16,13 @@ def index(request):
 def myblog_index(request):
     # 查询所有博客信息
     blogs = Blog.objects.all()
-    context = {'products': blogs}
+    # 分页
+    paginator = Paginator(blogs, 3)
+    page_number = paginator.num_pages
+    page_range = paginator.page_range
+    page = request.GET.get('page', 1)
+    blogs = paginator.get_page(page)
+    context = {'products': blogs, 'page_number': page_number, 'page_range': page_range,'page':int(page)}
     return render(request, 'myweb/products/index.html', context)
 
 
@@ -121,6 +128,19 @@ def do_register(request):
         print(err)
         context = {'info': '注册失败！'}
         return render(request, 'myweb/register_fail.html', context)
+
+
+def myblog_search(request):
+    try:
+        keyword = request.GET['keyword']
+        blogs = Blog.objects.filter(content__icontains=keyword)
+        context = {'products': blogs}
+        return render(request, 'myweb/products/index.html', context)
+    except Exception as err:
+        print(err)
+        context = {'info': '搜索失败！'}
+        return render(request, 'myweb/products/info.html', context)
+
 
 #  执行登录表单
 def login(request):
